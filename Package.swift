@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "PocketUI",
+    platforms: [.iOS(.v16)],
     products: [
         .library(
             name: "PocketUI",
