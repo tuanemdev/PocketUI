@@ -22,14 +22,10 @@ public extension View {
     /// }
     /// ```
     ///
-    /// ## Behavior
-    /// - The sheet initially sizes to fit its content
-    /// - Maximum height is capped at 80% of screen height
-    /// - Height adjustments are animated for smooth transitions
-    ///
-    /// ## Notes
-    /// - Best used with content that may change size dynamically
-    /// - Performance optimized with geometry change tracking
+    /// - Note:
+    ///   - The sheet initially sizes to fit its content
+    ///   - Maximum height is capped at 80% of screen height
+    ///   - Height adjustments are animated for smooth transitions
     func presentationDetentsDynamic(_ animation: Animation = .smooth) -> some View {
         self.modifier(DynamicSheetModifier(animation: animation))
     }

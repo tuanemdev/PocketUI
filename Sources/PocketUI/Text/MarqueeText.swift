@@ -14,7 +14,7 @@ public extension Text {
     ///
     /// - Returns: A view with the marquee scrolling effect applied.
     ///
-    /// ## Usage Example:
+    /// ## Usage
     /// ```swift
     /// Text("This is a very long text that will scroll")
     ///     .marquee(startDelay: 2.0, speed: 50.0, leftFade: 20, rightFade: 20)
