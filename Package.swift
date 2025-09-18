@@ -1,4 +1,4 @@
-// swift-tools-version: 6.1
+// swift-tools-version: 6.2
 
 import PackageDescription
 
@@ -8,16 +8,19 @@ let package = Package(
     products: [
         .library(
             name: "PocketUI",
-            targets: ["PocketUI"]
+            targets: ["PocketUI"],
         ),
     ],
     targets: [
         .target(
-            name: "PocketUI"
+            name: "PocketUI",
+            swiftSettings: [
+                .defaultIsolation(MainActor.self),
+            ],
         ),
         .testTarget(
             name: "PocketUITests",
-            dependencies: ["PocketUI"]
+            dependencies: ["PocketUI"],
         ),
     ],
 )

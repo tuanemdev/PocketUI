@@ -61,7 +61,7 @@ fileprivate struct DynamicSheetModifier: ViewModifier {
     }
 }
 
-fileprivate struct SheetHeightModifier: ViewModifier, @preconcurrency Animatable {
+fileprivate struct SheetHeightModifier: ViewModifier, Animatable {
     var height: CGFloat
     
     var animatableData: CGFloat {

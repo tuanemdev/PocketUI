@@ -7,7 +7,7 @@ public struct VisualEffectView: UIViewRepresentable {
         self.style = style
     }
     
-    public func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView {
+    public func makeUIView(context: Context) -> UIVisualEffectView {
         let effect = UIBlurEffect(style: style)
         return UIVisualEffectView(effect: effect)
     }
