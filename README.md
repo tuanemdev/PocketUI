@@ -15,10 +15,12 @@ Add PocketUI to your project through Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/tuanemdev/PocketUI", branch: "main")
+    .package(url: "https://github.com/tuanemdev/PocketUI", exact: "0.0.1")
 ]
 ```
 
-## Development Status
+## ⚠️ Development Status
 
-⚠️ **Note**: This project is currently under active development and has not been tagged yet. Breaking changes may occur as the API evolves. Please use with caution in production environments.
+This project is currently under active development with frequent changes and does not yet follow semantic versioning.
+Breaking changes may occur between versions. Please use exact version specifications (as shown in the installation example)
+and carefully read the documentation for each function before use.
