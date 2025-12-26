@@ -34,14 +34,14 @@ public extension View {
 fileprivate struct DynamicSheetModifier: ViewModifier {
     let animation: Animation
     
-    @State private var sheetHeight: CGFloat = .zero
+    @State private var sheetHeight: CGFloat = 22.0
     
     func body(content: Content) -> some View {
         content
             .onGeometryChange(for: CGFloat.self) { proxy in
                 proxy.size.height
             } action: { contentHeight in
-                let newSheetHeight = min(contentHeight, windowSize.height * 0.8)
+                let newSheetHeight = min(max(contentHeight, 22.0), windowSize.height * 0.8)
                 if sheetHeight == .zero {
                     sheetHeight = newSheetHeight
                 } else {
