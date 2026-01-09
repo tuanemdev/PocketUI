@@ -5,7 +5,7 @@ import SwiftUI
 /// `VisualEffectView` enables modern iOS design patterns like blur backgrounds and frosted glass
 /// effects in SwiftUI. It provides a simple way to apply various blur styles to your views.
 ///
-/// ## Usage:
+/// ## Usage
 /// ```swift
 /// ZStack {
 ///     Image("background")

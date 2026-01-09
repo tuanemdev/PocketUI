@@ -14,7 +14,7 @@ public extension View {
     ///
     /// - Returns: A modified view with the load action applied.
     ///
-    /// ## Usage:
+    /// ## Usage
     /// ```swift
     /// VStack {
     ///     Text("Hello, World!")

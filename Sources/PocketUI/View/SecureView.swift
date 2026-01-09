@@ -14,7 +14,7 @@ public extension View {
     /// - Parameter isActive: Whether to enable the secure layer behavior.
     /// - Returns: A view with secure layer properties applied when active.
     ///
-    /// Usage:
+    /// ## Usage
     /// ```swift
     /// Text("Sensitive information")
     ///     .secured(isPrivateMode)

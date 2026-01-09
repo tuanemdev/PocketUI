@@ -10,7 +10,7 @@ public extension View {
     ///
     /// - Returns: A new view created by applying the transformation block.
     ///
-    /// Usage
+    /// ## Usage
     /// ```swift
     /// Text("Modern Design")
     ///     .apply { view in
