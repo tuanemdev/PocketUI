@@ -22,6 +22,7 @@ extension BackportView {
     ///
     /// - Parameter cornerRadius: The corner radius, or `nil` to use the system
     ///   default.
+    @available(iOS, deprecated: 16.4, message: "use `presentationCornerRadius(_:) instead.")
     @ViewBuilder
     public func presentationCornerRadius(_ cornerRadius: CGFloat?) -> some View {
         if #available(iOS 16.4, *) {
