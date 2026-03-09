@@ -28,7 +28,7 @@ extension BackportView {
         if #available(iOS 16.4, *) {
             content.presentationCornerRadius(cornerRadius)
         } else {
-            content.background(SheetPresentationRepresentable(cornerRadius: cornerRadius))
+            content.background { SheetPresentationRepresentable(cornerRadius: cornerRadius) }
         }
     }
 }

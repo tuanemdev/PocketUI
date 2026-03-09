@@ -38,7 +38,7 @@ extension BackportView {
         if #available(iOS 16.4, *) {
             content.presentationContentInteraction(behavior.originalVersion)
         } else {
-            content.background(SheetPresentationRepresentable(behavior: behavior))
+            content.background { SheetPresentationRepresentable(behavior: behavior) }
         }
     }
 }

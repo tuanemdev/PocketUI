@@ -40,13 +40,13 @@ extension BackportView {
         if #available(iOS 16.4, *) {
             content.presentationBackground(style)
         } else {
-            content.background(
+            content.background {
                 SheetPresentationRepresentable(
                     content: Rectangle()
                         .fill(style)
                         .ignoresSafeArea(.container, edges: .all)
                 )
-            )
+            }
         }
     }
     
@@ -93,7 +93,7 @@ extension BackportView {
         if #available(iOS 16.4, *) {
             self.content.presentationBackground(alignment: alignment, content: content)
         } else {
-            self.content.background(
+            self.content.background {
                 SheetPresentationRepresentable(
                     content:
                         ZStack(alignment: alignment) {
@@ -102,7 +102,7 @@ extension BackportView {
                         }
                         .ignoresSafeArea(.container, edges: .all)
                 )
-            )
+            }
         }
     }
 }

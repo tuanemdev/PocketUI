@@ -40,7 +40,7 @@ extension BackportView {
         if #available(iOS 16.4, *) {
             content.presentationBackgroundInteraction(interaction.originalVersion)
         } else {
-            content.background(SheetPresentationRepresentable(interaction: interaction))
+            content.background { SheetPresentationRepresentable(interaction: interaction) }
         }
     }
 }

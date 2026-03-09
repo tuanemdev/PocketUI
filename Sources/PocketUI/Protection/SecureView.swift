@@ -63,6 +63,12 @@ fileprivate struct SecureView<Content: View>: UIViewRepresentable {
     
     final class Coordinator {
         var textField: UITextField?
+        
+        // Explicit deinit prevents the SIL 'EarlyPerfInliner' pass from crashing
+        // when optimizing this class within its generic parent context.
+        deinit {
+            textField = nil
+        }
     }
 }
 
